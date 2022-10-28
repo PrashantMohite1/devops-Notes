@@ -1,0 +1,93 @@
+To install docker 
+# sudo apt  install docker.io
+
+Give permission to run docker commands 
+# sudo chmod 777 /var/run/docker.sock                                       
+# docker ps  
+
+
+to list the currently running docker container
+# docker ps 
+
+to list all docker container 
+# docker ps -a
+
+
+To run container 
+# docker run -d -it <image name>
+
+to expose the port no of container ( port no on which we  want to expose : actual port no )
+# docker run -d -p 5000:80  <name of image >
+# ex - docker run -d -p 4000:80 nginx 
+# docker run -d -p 5000:80 –name < custom name to container>  <name of image > 
+#ex- docker run -d -p 5000:80 --name prashant nginx
+
+
+
+
+for logging into container
+# docker exec -it <container-id> bash
+
+
+Cd /usr/share/nginx/html/       → index.html editing to check changes (57:00)
+
+
+for exit from container
+# exit
+
+to stopping container
+# docker stop <cont id /name>
+
+to start container 
+# docker start <cont id /name>
+
+to shut down container forcefully
+# docker kill <cont id /name>
+
+to restart container 
+# docker restart <cont id /name>
+
+to remove or delete container
+# docker rm <cont id /name>
+
+to remove or delete docker images 
+# docker rmi <cont id /name>
+
+to delete all stopped container
+# docker container prune 
+
+
+to delete all unused images
+# docker image prune -a 
+
+to save content in docker container 
+# docker commit <container-id> <username of dockerhub>/<container-name>
+
+to push image into docker hub repo 
+# docker push <name of image>
+
+to build the docker image
+# docker build -t <name of build> <path where you want to build>
+# ex - docker build -t my-webapp /home/ubuntu/
+
+when your docker file content in different file
+-f pm - docker will assume that dockerfile commands are in pm
+docker build <name of image> -f <jyamadhe dockerfile cmds ahet> <path jya thikani hi file ahe>
+jar file different thikani asel - then path dya 
+jar apan already tya location var asel jite file ahe - then .(dot) dya
+# ex - docker build myimage -f pm /home/ubuntu 
+# ex - docker build myimage -f pm .
+
+
+
+
+
+
+
+To login in docker account 
+# docker login
+
+To our image to docker hub  ( note - before push make sure you are login in hub)
+# docker push <username>/<container id >
+
+
