@@ -9,6 +9,9 @@ Give permission to run docker commands
 to list the currently running docker container
 # docker ps 
 
+to list all docker images 
+# docker images
+
 to list all docker container 
 # docker ps -a
 
