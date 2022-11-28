@@ -1,0 +1,63 @@
+images :-
+
+  to list images
+  # docker images
+
+  to delete images
+  # docker rmi <img-id>
+
+  to build docker image 
+  # sudo docker commit <cont-id> <new-img-name>
+
+  to delete all unused images
+  # docker image prune -a 
+
+
+
+container :-
+
+  to make container from base image 
+  # docker run -d -it -p <ip>:80 --name <cont-name> <img-name>
+
+  for logging into container
+  # docker exec -it <container-id> bas
+
+  to save content in docker container 
+  # docker commit <container-id> <username of dockerhub>/<container-name>
+
+  to stop container 
+  # docker stop <cont-name/id>
+
+  to delete all stopped container
+  # docker container prune 
+
+
+
+
+Dockerfile :-
+
+  make docker image from Dockerfile
+  # docker build <dir-of-Dockerfile> -t <img-name>
+
+  ex- docker build . -t image_1
+  
+
+  to make container from Dockerfile-created-image
+  # docker run -it -p <ip>:80 --name <cont-name> <img-name>
+
+
+
+
+docker-hub :-
+
+  To login in docker account 
+  # docker login
+
+  To push image to docker hub (1st-login then push) 
+  # docker push <username>/<container id >
+    
+    
+
+
+
+
