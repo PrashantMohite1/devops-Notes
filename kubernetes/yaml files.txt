@@ -1,3 +1,55 @@
+                        
+=========================================== COMMANDS ===================================================
+
+
+TO check list of pods
+# kubectl get po
+
+to check nodes 
+# kubectl get nodes
+
+
+To create deployment 
+# kubectl create -f deployment.yml
+    >>>>>Note - after creation file madhe jar apan changes kele then use below apply command 
+    # Kubectl apply -f deployment.yml
+
+
+To verify deployed or not 
+# kubectl get deploy
+
+
+How to remove and add replica 
+    Method - 1
+    # Kubectl scale deploy <deployment-name> – -  replicas <no of pod >
+    Ex -  Kubectl scale deploy pm -- replicas 2
+
+    Method -2
+    Edit deployent.yml - 
+    edit  replica - no pod you want
+
+
+
+To login inside the pod 
+# kubectl exec -it < name of pod > bash
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+=========================================================================================================================
+                                       YAML FILES
+==========================================================================================================================
+
 
 ***************************** POD *************************
 
