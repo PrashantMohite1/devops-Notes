@@ -34,7 +34,8 @@ To login inside the pod
 # kubectl exec -it < name of pod > bash
 
 
-
+to delete pod
+# kubectl delete pods <pod-name>
 
 
 
