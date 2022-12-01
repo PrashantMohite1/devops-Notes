@@ -1,5 +1,7 @@
-                        
-=========================================== COMMANDS ===================================================
+
+==================================================================================================================
+ ****************************      COMMANDS    *******************************************************************
+==================================================================================================================
 
 
 TO check list of pods
@@ -15,9 +17,46 @@ To create deployment
     # Kubectl apply -f deployment.yml
 
 
-To verify deployed or not 
+To view list of deployments 
 # kubectl get deploy
 
+
+=========
+service :
+=========
+
+to view list of services
+# kubectl get svc
+
+
+to create NodePort service
+# kubectl create service nodeport <name-of-service> --tcp=<port-of-service>:<port-of-container>
+ 
+    >> ex- kubectl create service nodeport nginx --tcp=80:80
+
+
+
+To create clusterIp
+# kubectl create service clusterip <name-of-service> --tcp=<port-of-service>:<port-of-container>
+
+     >> ex- kubectl create service clusterip nginx --tcp=80:80
+     
+
+
+=========
+Ingress :
+=========
+
+to deploy ingress rules
+# kubectl create -f <yml-file-of-ingress>
+
+to view list of ingress rules
+# kubectl get ing
+
+
+==============
+other commands
+==============
 
 How to remove and add replica 
     Method - 1
@@ -38,18 +77,9 @@ to delete pod
 # kubectl delete pods <pod-name>
 
 
-
-
-
-
-
-
-
-
-
 =========================================================================================================================
-                                       YAML FILES
-==========================================================================================================================
+ ****************************      YAML FILES     ***********************************************************************
+=========================================================================================================================
 
 
 ***************************** POD *************************
@@ -188,11 +218,29 @@ spec:
   type: ClusterIP                       # Specifies the service type i.e ClusterIP or NodePort
 
 
-command to list of services
-# kubectl get svc   
+**********************************************************************************************************************
+Ingress rule :-
+
+
+metadata:
+  name: sample-ingress-rule
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /
+spec:
+  rules:
+    - http:
+        paths:
+          - path: /nginx
+            backend:
+              serviceName: nginx
+              servicePort: 80
+          - path: /apache
+            backend:
+              serviceName: httpd
+              servicePort: 80
  
        
        
-       
+  *********************************************************************************************************     
        
    
