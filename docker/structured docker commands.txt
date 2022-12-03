@@ -45,7 +45,12 @@ Dockerfile :-
   to make container from Dockerfile-created-image
   # docker run -it -p <ip>:80 --name <cont-name> <img-name>
 
-
+  DOCKERFILE :-
+  FROM ubuntu
+  RUN apt update
+  RUN apt install apache2
+  ADD . /var/www/html
+  ENTRYPOINT apachectl -D FOREGROUND
 
 
 docker-hub :-
