@@ -1,6 +1,6 @@
 # steps to create personal access token :- 
      - click on circle which is at right top corner --> setting --> developer setting --> personal access token --> 
-     -  --> select tokens (classic) --> generate new token
+     -  --> select tokens (classic) --> select generate new tokens classic --> asign permissions to it --> done
 
 
 
