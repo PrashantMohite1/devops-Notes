@@ -69,7 +69,10 @@ docker-hub :-
   # docker push <username>/<container id >
     
     
-
+IMP NOTES - 
+  - whenever logged in container --> make sure 1st update the container
+  - if update is stopped while updating container  --> then restart container or stop and start 
+  - 
 
 
 
