@@ -136,8 +136,13 @@ Playbooks
     service: 
       name=httpd
       state: started
+      
 =========================================================================================
+
 Ansible role
+
+command to create roles directory structure
+# ansible-galaxy init <role name>
 
 ubuntu@ip-172-31-80-195:~/apache$ tree
 .
