@@ -20,7 +20,7 @@ container :-
   # docker run -d -it -p <ip>:80 --name <cont-name> <img-name>
 
   for logging into container
-  # docker exec -it <container-id> bas
+  # docker exec -it <container-id> bash
 
   to save content in docker container 
   # docker commit <container-id> <username of dockerhub>/<container-name>
