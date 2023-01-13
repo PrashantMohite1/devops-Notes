@@ -114,3 +114,16 @@ Footer
 Footer navigation
 Terms
 Privacy
+
+
+---------------------------- how to Resolve Merge conflict ----------------------------
+
+ steps - 
+   - run " git mergetool " --> vim editor enter
+   - manually remove and delete from merge --> :wq --> enter --> enter
+
+
+
+
+
+
