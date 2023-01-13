@@ -1,11 +1,18 @@
-# steps to create personal access token :- 
+
+*** very imp note - 1st thing to do before start working on git - gitHub
+      - 1st add remote repo to directory 
+      - then clone the repo ---> then we get github repos folder --> 
+      - now start creating files , commit , pushing.
+     
+ # for pushing to remote repo 
+     - username -  after logged into github see what your username ( in my case - PrashantMohite1)
+      - password - personal acess token
+      
+      
+ # steps to create personal access token :- 
      - click on circle which is at right top corner --> setting --> developer setting --> personal access token --> 
      -  --> select tokens (classic) --> select generate new tokens classic --> asign permissions to it --> done
 
-very imp note - 1st thing to do before start working on git - gitHub
-     - 1st add remote repo to directory 
-     - then clone the repo ---> then we get github repos folder --> 
-     - now start creating files , commit , pushing.
 
 ----------------------------------------------------- COMMANDS  -------------------------------------------------------------------------------------------------------
 
