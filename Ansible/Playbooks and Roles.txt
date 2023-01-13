@@ -222,16 +222,4 @@ ubuntu@ip-172-31-80-195:~/apache$
     roles:
       - apache
 
----
-  - hosts: servers
-    sudo: yes
-    tasks:
-    - debug:
-        msg: "before we run our role"
-    - import_role:
-        name: apache
-    - include_role:
-        name: apache
-    - debug:
-        msg: "after we ran our role"	
-      
+
