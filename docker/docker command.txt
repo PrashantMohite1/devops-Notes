@@ -16,6 +16,9 @@ to list all docker container
 # docker ps -a
 
 
+To pull image from DockerHub
+# docker pull <image-name>
+
 To run container 
 # docker run -d -it <image name>
 
