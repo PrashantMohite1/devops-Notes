@@ -2,6 +2,9 @@ images :-
 
   to list images
   # docker images
+  
+  To pull image from DockerHub
+  # docker pull <image-name>
 
   to delete images
   # docker rmi <img-id>
