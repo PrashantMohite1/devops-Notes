@@ -18,9 +18,13 @@ images :-
 
 
 container :-
+  
+  To make container from base image
+  # docker run -d -it <image name>
 
-  to make container from base image 
-  # docker run -d -it -p <ip>:80 --name <cont-name> <img-name>
+  to expose the port no of container
+  # docker run -d -p <custom-Port-no>:80 --name <cont-name> <img-name>
+  
 
   for logging into container
   # docker exec -it <container-id> bash
