@@ -1,3 +1,9 @@
+
+to give permission to docker 
+# sudo chown $USER /var/run/docker.sock
+
+
+
 images :-
 
   to list images
