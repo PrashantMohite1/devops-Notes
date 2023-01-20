@@ -72,7 +72,11 @@ docker-hub :-
   # docker login
 
   To push image to docker hub (1st-login then push) 
-  # docker push <username>/<container id >
+  
+    step 1 - create image with name - "username/image-name"           
+        # docker commit <container-id> username/image name 
+        
+        # docker push <username>/<image-name>
     
     
 IMP NOTES - 
