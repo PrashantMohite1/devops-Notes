@@ -1,5 +1,5 @@
 to give permission to docker 
-# sudo chown $USER /var/run/docker.sock
+# sudo chown $USER /var/run/docker.sock                     # $USER Means current user
 
 
 
