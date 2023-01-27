@@ -1,0 +1,131 @@
+
+
+chef commands 
+
+to see login chef-orgranisation 
+# google --> manage.chef.io --> user id and pass
+
+
+first create cookbook foldr 
+# mkdir cookbooks
+
+
+
+to create cookbook
+    cd cookbooks
+# chef generate cookbook test-cookbook
+
+
+to create recipe 
+
+	- 1st create recipe file 
+	   # chef generate recipe test-recipe
+
+	- 2nd add content in recipe file 
+	  # vi test-cookbook/recipes/test-recipe.rb 
+
+
+for syntax check 
+# chef exec ruby -c test-cookbook/recipes/test-recipe.rb 
+
+
+for execution 
+# sudo chef-client -zr "recipe[test-cookbook::test-recipe]"
+
+to check conetent of file 
+# cat /myfile
+
+
+to perform 2 actions at once 
+# action [:enable, :start]
+
+
+to check our workstation is connected to server or not
+# knief ssl check 
+
+
+to connect node to chef-server
+# knife bootstrap 10.1.0.75 --ssh-user ec2-user --sudo -i 27jankey.pem -N node 
+
+	- n means name of node
+
+to check node connected or not 
+# knife node list 
+
+
+to upload cookbook 
+# knife cookbook upload apache-cookbook
+
+to list all the uploaded cookbooks on chef-server
+# knife cookbook list
+
+to add recipes in run_list 
+# knife node run_list set node-name "recipe[apache-cookbook::apache-recipe]"
+
+to see runlist of node 
+# knife node show node-name
+
+
+to add crontab command in ec2 user data 
+# echo "* * * * * root chef-client " >> /etc/crontab
+
+
+Chef roles commands --------------------------------
+
+to list node connected to chef-server 
+# knife node list
+
+to delete node from chef-server 
+# knife node delete node-name -y
+
+to list uploaded cookbooks
+# knife cookbooks list
+
+to delete uploaded cookbooks
+# knife cookbook delete cookbook-name
+
+when bootstraping we do then chef-client is create for nodes 
+to list created client 
+# knife client list
+
+to delete client 
+# knife client delete client-name   
+
+
+----------------------all roles command from creation of roles ----------
+
+steps for role 
+  1 - create role and mention cookbook in run_list 
+  2- upload role to chef-server
+  3 - upload cookbook to chef-server
+  4 - check node ip on google 
+
+task 2 -
+  5- change content inside recipe 
+  6 - every time apan recipe or cookbook madhe chages kele tar aplyala cookbook again server madhe upload karavi lagel
+  7 - upload role and cookbook on chef-server
+  
+
+cd chef server --> cd roles --> vi role-name.rb
+name "devops"
+description "web server role "
+run_list "recipe[apache-cookbook::apache-recipe]"
+
+
+to upload role to chef-server 
+# knife role from file roles/file-name
+
+
+to check list of uploaded roles
+# knife role list
+
+
+to add role to run_list of node 
+# knife node run_list set node-name "role[role-name]"
+
+to check roles are added to run_list of nodes 
+# knife node show node-name
+
+
+
+
