@@ -1,0 +1,18 @@
+MINIKUBE INSTALLATION ON WINDOWS 
+
+
+step 1 -:
+ 
+    go to location where minikube.exe files are located --> then copy file location --> go to environmental variables --> use variable for mohit :-
+                                                                                                                                        - click on path 
+                                                                                                                                        - enter variable name = PATH
+                                                                                                                                        - variable value = path of minikube.exe 
+                                                                                                                                        
+ step 2 -: go to minikube.exe file location and check actual name of that file 
+           ex - minikube_3.4.2                     minikube
+                (actaul name of file)              ( we are typing minikube on cmd )
+                change file name to 
+                 minikube.exe
+   
+                                  
+   Step 3 -: open cmd as a administrator --> minikube start --: it basically create minikube name vm in virtual box with 2vcp , 2 gb ram , and 20 gb internal.
