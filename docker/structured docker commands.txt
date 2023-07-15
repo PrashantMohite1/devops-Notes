@@ -79,6 +79,22 @@ docker-hub :-
         # docker commit <container-id> username/image name 
         
         # docker push <username>/<image-name>
+
+ 
+OTHER IMP COMMANDS -: 
+
+to restart conatainer 
+ # docker restart <container_id or container_name>
+            usecase - when ever you have changed anything in your docker container and lets say you are currently running application any application and you want to check whether it applied on that application or not                         then docker restart is better
+
+for detailed information of container 
+ # docker network inspect <network_id or network_name>
+
+to see docker containers logs with continuous output.
+ # docker logs -f <cont-id>
+
+
+
     
     
 IMP NOTES - 
