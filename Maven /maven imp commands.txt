@@ -1,0 +1,6 @@
+
+it remove old artifacts created by maven 
+# maven clean 
+
+for removing old packages and create a new package 
+# mvn clean package - 
