@@ -29,7 +29,8 @@ Add files to repository
 # git commit -m "<Commit_message>"
 
 Add remote repo to local
-# git remote add origin <repo_url>
+# git remote add origin <your-profile-url/project-name.git/>
+  ex- git remote add origin https://github.com/PrashantMohite1/my-cli-appln.git
 
 Configure author details
 # git config --global user.email "you@example.com"
