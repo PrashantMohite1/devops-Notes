@@ -30,7 +30,11 @@ Add files to repository
 
 Add remote repo to local
 # git remote add origin <your-profile-url/project-name.git/>
-  ex- git remote add origin https://github.com/PrashantMohite1/my-cli-appln.git
+  ex- git remote add origin https://github.com/PrashantMohite1/my-cli-appln.git           #this repo must be on remote github.com other wise this command not worked
+
+create remote repo from cli
+# sudo apt install hub 
+# hub create "project-name"
 
 Configure author details
 # git config --global user.email "you@example.com"
